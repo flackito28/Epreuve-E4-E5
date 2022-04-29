@@ -25,6 +25,24 @@ html{
     overflow-x: hidden;
 }
 
+section{
+    padding: 0 7%;
+    padding-top: 12rem;
+}
+
+.btn{
+    font-size: 2rem;
+    padding: 7rem 3rem;
+    background: var(--orange);
+    color: #fff;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #333;
+}
+
 header{
     position: fixed;
     top: 0; left: 0;
@@ -71,8 +89,72 @@ header .navbar ul li a:hover{
     color: #444;
 }
 
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
 
+.home .image{
+    flex: 1 1 40rem;
+}
 
+.home .image img{
+    width: 100%;
+}
+
+.home .content{
+    flex: 1 1 40rem;
+}
+
+.home .content h1{
+    font-size: 5rem;
+    color: #444;
+}
+
+.home .content p{
+    font-size: 1.8rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.about .image{
+    flex: 1 1 40rem;
+}
+
+.about .image img{
+    width: 100%;
+}
+
+.about .content{
+    flex: 1 1 40rem;
+}
+
+.about .content h1{
+    font-size: 5rem;
+    color: #444;
+}
+
+.about .content p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+}
 
 
 
@@ -95,6 +177,16 @@ header .navbar ul li a:hover{
     }
 
 }
+
+.home .content{
+    text-align: center;
+}
+
+.home .content h1{
+    font-size: 4rem;
+}
+
+
 
 @media(max-width:500px){
 
@@ -151,6 +243,10 @@ header .navbar ul li a:hover{
 
     header .navbar.nav-toggle{
         right: 0;
+    }
+
+    section{
+        padding-top: 5rem;
     }
 
 }
